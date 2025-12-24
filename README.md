@@ -1,3 +1,3 @@
 # e
 By view picture link
-#here we do siple site with one #picture+ url
+#here we do simple site with one #picture+ url
