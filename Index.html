@@ -1,0 +1,56 @@
+``html name=index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Single-picture link</title>
+  <style>
+    /* Center the image and make it responsive */
+    html,body { height:100%; margin:0; }
+    .wrap {
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#f7f7f7;
+      padding:20px;
+      box-sizing:border-box;
+    }
+    a.image-link {
+      display:inline-block;
+      max-width:900px;
+      width:100%;
+      text-decoration:none;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 8px 24px rgba(0,0,0,0.12);
+      -webkit-tap-highlight-color: transparent; /* remove tap highlight on mobile */
+    }
+    img {
+      display:block;
+      width:100%;
+      height:auto;
+      vertical-align:middle;
+      transition:transform .18s ease;
+    }
+    a.image-link:active img,
+    a.image-link:focus img,
+    a.image-link:hover img { transform:scale(1.01); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!--
+      Replace the href value with the URL you want to open when the picture is pressed.
+      Replace src with your image file or an image URL.
+      Remove target="_blank" if you want the link to open in the same tab.
+    -->
+    <a class="image-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+      <img src="picture.jpg" alt="Tap image to open link">
+    </a>
+  </div>
+</body>
+</html>
+
+
